@@ -1,0 +1,12 @@
+number_input = int(input("Enter an integer please: " ))
+divider = 2
+if number_input < 2:
+  print("Error, this is not an appropriate number")
+else: 
+  print(f"The prime factors of {number_input} are:  ")
+  while divider  <= number_input:
+    if number_input % divider == 0:
+      print (divider)
+      number_input = number_input // divider 
+    else:
+      divider += 1
