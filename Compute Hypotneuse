@@ -1,0 +1,16 @@
+from math import sqrt
+
+def calculate_hypotnuse(a, b):
+ c = sqrt(a**2 + b**2) 
+ return c
+
+
+print("Enter lengths of the right triangle's two shorter sides")
+
+
+e = float(input("first side: "))
+f = float(input('second side: '))
+
+d = calculate_hypotnuse(e, f)
+
+print("The length of the hypotnuse is", d)
