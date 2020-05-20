@@ -1,0 +1,15 @@
+def shipping_charges(n):
+  if n == 1:
+    return 10.95
+  elif n > 1:
+    return  10.95 + (n-1) * 2.95  
+  else:
+    return 0
+
+items = input("How many items do you want to ship: ")
+items = int(items)
+
+cost = round(shipping_charges(items), 2)
+
+
+print ("Your shipping charge will be", cost)
